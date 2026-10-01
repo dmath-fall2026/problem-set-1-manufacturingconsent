@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+% 12pt font size, article class.
+% Usually stick to this, though you can try "amsart" for an AMS style article instead.
+
+\usepackage{amsmath,amssymb,psfrag,epsfig,boxedminipage,helvet,amsthm,endnotes,version,multicol}
+\usepackage{pgfplots}
+% Package imports. We probably don't need all of them, but it doesn't hurt.
+
+\newcommand{\sol}{\par{\bf SOLUTION}: }
+\newcommand{\remove}[1]{}
+\setlength{\oddsidemargin}{-.2in}
+\setlength{\evensidemargin}{-.2in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-0.8in}
+\setlength{\textheight}{9.5in}
+% Margin stuff.
+
+% Theorem and Definition Environments
+\theoremstyle{plain}
+\newtheorem{prob}{Problem}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+\newtheorem{defn}[thm]{Definition}
+
+\title{Problem Set 1}
+\author{Your Name Here!}
+\date{Due: 3 October 2026}
+
+\makeatletter
+\let\newtitle\@title
+\makeatother
+
+\renewcommand{\thepage}{\footnotesize MAT 3120, Discrete Mathematics, \newtitle, p. \arabic{page}} 
+
+\begin{document}
+	
+	\maketitle
+
+\begin{enumerate}
+
+\item Let $A$, $B$, and $C$ be sets. Prove that if
+\[
+A\cup C=B\cup C
+\qquad\text{and}\qquad
+A\cap C=B\cap C,
+\]
+then $A=B$.
+
+\sol % Put your solution below.
+
+\item Let $A = \{ 1, 2, 3, 4, 5 \}$.
+\begin{enumerate}
+\item List all the subsets of $A$ that have cardinality 1.
+\item How many subsets of $A$ have cardinality 2? Justify your answer.
+\item Come up with a formula for the number of subsets of $A$ that have cardinality $k$, for some $k \leq 5$.
+\item Let $X = \{ 1, 2, \ldots, n \}$, so $|X| = n$. Here, I mean that if $n = 0$, then $X$ is the empty set. Otherwise, for $n > 0$, $X$ is the set of integers from $1$ to $n$. What formula can we use for the number of subsets of $X$ that have cardinality $k$ (for some $k \leq n$)?
+\end{enumerate}
+
+\sol
+\begin{enumerate}
+	\item Solution for (a)
+	\item Solution for (b)
+	\item Solution for (c)
+	\item Solution for (d)
+\end{enumerate}
+
+\item Prove that if $f : A \to B$ is a bijection, then there is a bijection $g : B \to A$. This shows that cardinality is symmetric: that is, if $|A| = |B|$, then $|B| = |A|$.
+
+\sol %Put your solution below
+
+\item Prove that if $f : A \to B$ is a bijection and $g : B \to C$ is a bijeciton, then there is a bijection $h : A \to C$. This shows that cardinality is transitive: if $|A| = |B|$ and $|B| = |C|$, then $|A| = |C|$.
+
+\sol % Put your solution below
+
+\item You revisit the knights / knaves island and see three people A, B, and C. A says: ``C is a knave.'' B says: ``A and I are of opposite types.'' C says: ``Neither A nor B is a knight.'' Determine the identities of A, B, and C. Explain your answer (you may reason intuitively or use a truth table).
+
+\sol % Put your solution below
+
+\item Let $F=\{1,4,9\}$ and use the convention
+$\mathbb{N}=\{0,1,2,\ldots\}$. Construct an explicit bijection
+\[
+f:\mathbb{N}\longrightarrow\mathbb{N}\setminus F.
+\]
+Prove that your function is injective and surjective.
+
+\sol % Put your solution below.
+
+\item Let $f:A\to B$. For each $S\subseteq A$, define its image by
+\[
+f(S)=\{f(x):x\in S\}.
+\]
+Let $S,T\subseteq A$.
+\begin{enumerate}
+\item Prove that $f(S\cap T)\subseteq f(S)\cap f(T)$.
+\item Give an example where equality fails. Specify the sets, the function, and the two images being compared.
+\item Prove that equality holds for all $S,T\subseteq A$ if $f$ is injective.
+\end{enumerate}
+
+\sol
+\begin{enumerate}
+\item Solution for (a)
+\item Solution for (b)
+\item Solution for (c)
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
